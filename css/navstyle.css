@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	min-width: 720px;
+}
+
+body {
+  background: #ededed;
+  padding: 0 0px;
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1{
+	text-align: center;
+	margin: 80px 0;
+}
+
+.path{
+	width: 100%;
+	height: 80px;
+	background-image: url(http://yunkus.com/wp-content/themes/zxx/images/T900-500.png);
+	transition: all .35s ease-in-out;
+	clip-path: polygon(0% 0%,100% 0%,100% 80%,60% 80%,50% 100%,40% 80%,0% 80%);
+}
+
+.mynav ul{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+
+.mynav li:not(:last-child){
+	margin-right: 18px;
+}
+
+.mynav a{
+	display: block;
+	font-size: 20px;
+	padding: 7px 15px;
+	text-decoration: none;
+	color: black;
+}
+
+.target{
+	border-bottom: 4px solid transparent;
+	position: absolute;
+	z-index: -1;
+  	transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+  transition: all .35s ease-in-out;
+}
